@@ -13,7 +13,7 @@ use App\Http\Controllers\LoginController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::view('/login', "login")->name('login');
+Route::view('/login', "login")->middleware('nocache')->name('login');
 Route::view('/registro', "register")->name('registro'); 
 Route::view('/privada', "index")->middleware('auth', 'nocache')->name('privada');
 
