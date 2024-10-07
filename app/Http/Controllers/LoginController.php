@@ -24,20 +24,23 @@ class LoginController extends Controller
         Auth::login($user);
         return redirect(route('privada'));
     }
-    public function login(Request $request) {
+    public function login(Request $request)
+    {
+        //validaciones
         $credentials = [
             "email" => $request->email,
             "password" => $request->password,
         ];
-        $remember = ($request->has('remember')?true : false);
-        if(Auth::attempt($credentials,$remember)){
+        $remember = ($request->has('remember') ? true : false);
+        if (Auth::attempt($credentials, $remember)) {
             $request->session()->regenerate();
             return redirect()->intended('privada');
-        }else{
+        } else {
             return redirect('login');
         }
     }
-    public function logout(Request $request) {
+    public function logout(Request $request)
+    {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
