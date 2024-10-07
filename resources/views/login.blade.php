@@ -53,7 +53,7 @@
                                             <div class="form-group">
                                                 <input type="password" class="form-control form-control-user"
                                                     id="passwordInput" placeholder="Contraseña" name="password"
-                                                    required>
+                                                    required>   
                                             </div>
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox small">
