@@ -31,15 +31,22 @@
                 <!-- Outer Row -->
                 <div class="row justify-content-center">
 
-                    <div class="col-xl-10 col-lg-12 col-md-9">
+                    <div class="col-xl-9 col-lg-12 col-md-9">
 
                         <div class="card o-hidden border-0 shadow-lg my-5">
                             <div class="card-body p-0">
                                 <!-- Nested Row within Card Body -->
                                 <div class="row">
-                                    <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                        <img src="{{ asset('logo.webp') }}">
-                                    </div>
+                                    <div class="d-flex justify-content-center align-items-center" style="height: 55vh;">
+                                        <style>
+                                            .custom-margin {
+                                                margin-left: 40px; /* Ajusta este valor según sea necesario */
+                                            }
+                                        </style>
+                                        
+                                        <img src="{{ asset('img/logo.webp') }}" class="img-fluid custom-margin" alt="Logo">
+                                        
+                                    </div>                                
                                     <div class="col-lg-6">
                                         <div class="p-5">
                                             <div class="text-center">
