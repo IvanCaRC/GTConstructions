@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::view('/login', "login")->name('login');
+Route::view('/registro', "register")->name('registro'); 
+Route::view('/privada', "index")->middleware('auth', 'nocache')->name('privada');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::post('/validar-registro', [LoginController::class, 'register'])-> name('validar-registro');
+Route::post('/inicia-sesion', [LoginController::class, 'login'])->name('inicia-sesion');
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
