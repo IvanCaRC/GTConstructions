@@ -15,7 +15,7 @@ use App\Http\Controllers\LoginController;
 */
 Route::view('/login', "login")->name('login');
 Route::view('/registro', "register")->name('registro'); 
-Route::view('/privada', "index")->middleware('auth')->name('privada');
+Route::view('/privada', "index")->middleware('auth', 'nocache')->name('privada');
 
 Route::post('/validar-registro', [LoginController::class, 'register'])-> name('validar-registro');
 Route::post('/inicia-sesion', [LoginController::class, 'login'])->name('inicia-sesion');
