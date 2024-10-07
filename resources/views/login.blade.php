@@ -22,9 +22,10 @@
                     <div class="col col-xl-10">
                         <div class="card" style="border-radius: 1rem;">
                             <div class="row g-0">
-                                <div class="col-md-6 col-lg-5 d-none d-md-block">
-                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+                                <div class="col-md-6 col-lg-5 d-none d-md-block" style="padding: 0;">
+                                    <img src="https://lirp.cdn-website.com/4df09214/dms3rep/multi/opt/4206639_e254c7b0-8401-4ee9-83e2-003e2314f846-1920w.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; width: 100%; height: 100%; object-fit: cover;" />
                                 </div>
+                                
                                 <div class="col-md-6 col-lg-7 d-flex align-items-center">
                                     <div class="card-body p-4 p-lg-5 text-black">
                                         <div class="d-flex align-items-center mb-3 pb-1">
