@@ -24,9 +24,7 @@ class LoginController extends Controller
         Auth::login($user);
         return redirect(route('privada'));
     }
-    public function login(Request $request)
-    {
-        //validaciones
+    public function login(Request $request) {
         $credentials = [
             "email" => $request->email,
             "password" => $request->password,
