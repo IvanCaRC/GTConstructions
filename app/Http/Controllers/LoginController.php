@@ -24,6 +24,17 @@ class LoginController extends Controller
         Auth::login($user);
         return redirect(route('privada'));
     }
+
+    //Funcion de Validacion de Formulario Login
+    public function validation(Request $request)
+    {
+        $validatedData = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|string|min:5|confirmed',
+        ]);
+        return redirect()->back()->with('Completado', 'Bienvenido al Sistema');
+    }
+
     public function login(Request $request) {
         $credentials = [
             "email" => $request->email,

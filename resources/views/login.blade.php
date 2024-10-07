@@ -15,7 +15,7 @@
 
 <body class="bg-gradient-primary">
     <main class="container align-center p-5">
-        <form method="POST" action="{{ route('inicia-sesion') }}">
+        <form method="POST" action="{{ route('login.validation') }}">
             @csrf
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
@@ -31,22 +31,19 @@
                                         <div class="d-flex align-items-center mb-3 pb-1">
                                             <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/54/8174331054_85cb5a4b-6933-4113-b236-501cd8e54b5a.png" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; width: 100%; height: 100%; object-fit: cover;" />
                                         </div>
-                                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                                        <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Inicia sesion con tu cuenta</h5>
                                         <div class="form-outline mb-4">
-                                            <input type="email" name="email" id="form2Example17" class="form-control form-control-lg" required />
-                                            <label class="form-label" for="form2Example17">Email address</label>
+                                            <input type="email" placeholder="ejemplo@gmail.com" name="email" id="form2Example17" class="form-control form-control-lg" required />
+                                            <label class="form-label" for="form2Example17">Correo Electronico</label>
                                         </div>
                                         <div class="form-outline mb-4">
-                                            <input type="password" name="password" id="form2Example27" class="form-control form-control-lg" required />
-                                            <label class="form-label" for="form2Example27">Password</label>
+                                            <input type="password" placeholder="*****" name="password" id="form2Example27" class="form-control form-control-lg" required />
+                                            <label class="form-label" for="form2Example27">Contraseña</label>
                                         </div>
                                         <div class="pt-1 mb-4">
                                             <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
                                         </div>
-                                        <a class="small text-muted" href="#!">Olvidaste tu contraseña?</a>
-                                        <p class="mb-5 pb-lg-2" style="color: #393f81;">Aun no tienes cuenta? <a href="#!" style="color: #393f81;">Registrate aqui</a></p>
-                                        <a href="#!" class="small text-muted">Terms of use.</a>
-                                        <a href="#!" class="small text-muted">Privacy policy</a>
+                                        <a class="small text-muted" href="forgetPassword">¿Olvidaste tu contraseña?</a>
                                     </div>
                                 </div>
                             </div>

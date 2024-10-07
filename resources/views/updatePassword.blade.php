@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Forgot Password</title>
+  <title>update Password</title>
 
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,15 +36,20 @@
               <div class="col-lg-6 d-none d-lg-block bg-password-image"></div>
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-2">¿Olvidaste tu contraseña?</h1>
-                    <p class="mb-4">Ingresa tu direccion de correo electronico y espera a que el administrador valide tu cambio</p>
+                    <h1 class="h4 text-gray-900 mb-2">¡Registra tu nueva contraseña!</h1>
+                    <p class="mb-4">Ingresa tu nueva contraseña de usuario, asegurate de recordarla</p>
                   </div>
                   <form class="user">
-                    <div class="form-group">
-                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Tu direccion de correo...">
+                    <div class="form-outline mb-4">
+                      <input type="password" placeholder="*****" name="password" id="form2Example27" class="form-control form-control-lg" required />
+                      <label class="form-label" for="form2Example27">Tu nueva contraseña</label>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <input type="password" placeholder="*****" name="password" id="form2Example27" class="form-control form-control-lg" required />
+                      <label class="form-label" for="form2Example27">Confirmar contraseña</label>
                     </div>
                     <a href="login.html" class="btn btn-primary btn-user btn-block">
-                      Restablecer Contraseña
+                      Cambiar Contraseña
                     </a>
                   </form>
                   <hr>  

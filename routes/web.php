@@ -13,9 +13,12 @@ use App\Http\Controllers\LoginController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+//Rutas de Login
 Route::view('/login', "login")->middleware('nocache')->name('login');
+Route::post('/login', [LoginController::class, 'validation'])->name('login.validation');
 Route::view('/registro', "register")->name('registro'); 
 Route::view('/forgetPassword', "forgetPassword")->middleware('nocache')->name('forgetPassword'); 
+Route::view('/updatePassword', 'updatePassword')->middleware('nocache')->name('updatePassword');
 Route::view('/privada', "index")->middleware('auth', 'nocache')->name('privada');
 
 Route::post('/validar-registro', [LoginController::class, 'register'])-> name('validar-registro');
