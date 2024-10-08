@@ -48,6 +48,10 @@ class LoginController extends Controller
             return redirect()->intended('privada');
         }else{//En caso de que la autenticacion falle
             session()->flash('error','Correo y/o contraseña incorrectos');
+            return back()->withErrors([
+                'email' => 'Verifica este campo',
+                'password' => 'Verifica este campo',
+            ])->withInput();
             return redirect('login')->withInput();
         }
     }
