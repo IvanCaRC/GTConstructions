@@ -25,29 +25,34 @@ class LoginController extends Controller
         return redirect(route('privada'));
     }
 
-    //Funcion de Validacion de Formulario Login
-    public function validation(Request $request)
-    {
-        $validatedData = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required|string|min:5|confirmed',
-        ]);
-        return redirect()->back()->with('Completado', 'Bienvenido al Sistema');
-    }
-
     public function login(Request $request) {
+
+        //Validar el formulario
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+        //Capturar credenciales
         $credentials = [
             "email" => $request->email,
             "password" => $request->password,
         ];
+
+        //Manejo del campo "recordarme"
         $remember = ($request->has('remember')?true : false);
+        //Autenticacion del usuario
         if(Auth::attempt($credentials,$remember)){
             $request->session()->regenerate();
+            //Mensaje de acceso exitoso
+            session()->flash('success','Sesion iniciada exitosamente');
             return redirect()->intended('privada');
-        }else{
-            return redirect('login');
+        }else{//En caso de que la autenticacion falle
+            session()->flash('error','Correo y/o contraseña incorrectos');
+            return redirect('login')->withInput();
         }
     }
+
+    
     public function logout(Request $request) {
         Auth::logout();
         $request->session()->invalidate();
