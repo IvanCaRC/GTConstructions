@@ -75,6 +75,9 @@
                                             <label class="form-label" for="form2Example17">Correo Electronico</label>
                                         </div>
                                         <div class="form-outline mb-4">
+                                            @error('password')
+                                                <span>{{ $message }}</span>
+                                            @enderror
                                             <input type="password" placeholder="*****" name="password"
                                                 value= "{{ old('password') }}" id="form2Example27"
                                                 class="form-control @error('password') is-invalid @enderror" required />
