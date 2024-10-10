@@ -38,10 +38,8 @@ class LoginController extends Controller
             "password" => $request->password,
         ];
 
-        //Manejo del campo "recordarme"
-        $remember = ($request->has('remember')?true : false);
         //Autenticacion del usuario
-        if(Auth::attempt($credentials,$remember)){
+        if(Auth::attempt($credentials)){
             $request->session()->regenerate();
             //Mensaje de acceso exitoso
             session()->flash('success','Sesion iniciada exitosamente');
