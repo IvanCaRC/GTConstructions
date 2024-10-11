@@ -40,14 +40,14 @@
 
             <!-- Nav Item - Icono de Administracion -->
             <li class="nav-item @yield('activeAdministracion')">
-                <a class="nav-link">
+                <a class="nav-link" href="{{ route('admins.index') }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Administracion</span></a>
             </li>
 
             <!-- Nav Item - Icono de Usuarios -->
             <li class="nav-item @yield('activeUsuarios')">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href="{{ route('admins.register') }}">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Usuarios</span>
                 </a>

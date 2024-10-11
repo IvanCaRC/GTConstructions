@@ -10,4 +10,9 @@ class adminController extends Controller
     {
         return view('admins.index');
     }
+
+    public function viewRegis()
+    {
+        return view('admins.register');
+    }
 }
