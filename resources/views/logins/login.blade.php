@@ -27,17 +27,9 @@
 
 <body class="bg-gradient-primary">
     <main class="container align-center p-5">
-        <form method="POST" action="{{ route('inicia-sesion') }}">
+        <form method="POST" action="{{ route('logins.login') }}">
             @csrf
-            <div class="container py-5 h-100">
-                <!-- Mostrar mensajes de éxito -->
-                @if (session('success'))
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        {{ session('success') }}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                @endif
-
+            <div class="container py-5 h-100">              
                 <!-- Mostrar mensajes de error -->
                 @if (session('error'))
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -89,7 +81,7 @@
                                             <button data-mdb-button-init data-mdb-ripple-init
                                                 class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
                                         </div>
-                                        <a class="small text-muted" href="forgetPassword">¿Olvidaste tu contraseña?</a>
+                                        <a class="small text-muted" href="layouts/plantilla.blade.php">¿Olvidaste tu contraseña?</a>
                                     </div>
                                 </div>
                             </div>

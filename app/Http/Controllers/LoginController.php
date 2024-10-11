@@ -12,6 +12,7 @@ use function Laravel\Prompts\password;
 class LoginController extends Controller
 {
 
+
     public function register(Request $request)
     { //Validar los datos
         $user = new User();
@@ -43,14 +44,14 @@ class LoginController extends Controller
             $request->session()->regenerate();
             //Mensaje de acceso exitoso
             session()->flash('success','Sesion iniciada exitosamente');
-            return redirect()->intended('privada');
+            return redirect()->intended(route('admins.index'));
         }else{//En caso de que la autenticacion falle
             session()->flash('error','Correo y/o contraseña incorrectos');
             return back()->withErrors([
                 'email' => 'Verifica este campo',
                 'password' => 'Verifica este campo',
             ])->withInput();
-            return redirect('login')->withInput();
+            return redirect('/')->withInput();
         }
     }
 
@@ -59,6 +60,6 @@ class LoginController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect(route('login'));
+        return redirect('/');
     }
 }

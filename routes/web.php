@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
+use  App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +16,8 @@ use App\Http\Controllers\LoginController;
 |
 */
 //Rutas de Login
-Route::view('/login', "login")->middleware('nocache')->name('login');
-Route::view('/registro', "register")->name('registro'); 
-Route::view('/forgetPassword', "forgetPassword")->middleware('nocache')->name('forgetPassword'); 
-Route::view('/updatePassword', 'updatePassword')->middleware('nocache')->name('updatePassword');
-Route::view('/privada', "index")->middleware('auth', 'nocache')->name('privada');
 
-Route::post('/validar-registro', [LoginController::class, 'register'])-> name('validar-registro');
-Route::post('/inicia-sesion', [LoginController::class, 'login'])->name('inicia-sesion');
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::post('/login', [LoginController::class, 'validation'])->name('login.validation');
+Route::get('/', [HomeController::class, 'viewVi'])->middleware('nocache')->name('/');
+Route::get('admins/index',[adminController::class,'index'])->middleware('auth', 'nocache')->name('admins.index');
+Route::post('logins/login', [LoginController::class, 'login'])->name('logins.login');
+Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
