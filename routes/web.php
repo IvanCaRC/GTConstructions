@@ -18,10 +18,12 @@ use App\Livewire\ShowUsers;
 //Rutas de Login
 
 Route::get('/', [HomeController::class, 'viewVi'])->middleware('nocache')->name('/');
-Route::get('admins/index',[adminController::class,'index'])->middleware('auth', 'nocache')->name('admins.index');
+Route::get('admins/index', [adminController::class, 'index'])->middleware('auth', 'nocache')->name('admins.index');
 Route::get('admins/registrer', [adminController::class, 'viewRegis'])->middleware('auth', 'nocache')->name('admins.register');
 
 
 Route::post('logins/login', [LoginController::class, 'login'])->name('logins.login');
 Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
+
+
 

@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    
 
     <title>@yield('title')</title>
 
@@ -19,6 +20,15 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+
+    <!-- Scripts -->
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <!-- Styles -->
     @livewireStyles
 </head>
 
@@ -299,9 +309,9 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
                                 <img class="img-profile rounded-circle"
-                                    src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                                    src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pixelcut.ai%2Fes%2Fprofile-picture-maker&psig=AOvVaw0hfGdwrwvu5QOOQ-e6243B&ust=1728782806949000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDs1PXXh4kDFQAAAAAdAAAAABBU">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
