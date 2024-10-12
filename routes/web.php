@@ -20,7 +20,8 @@ use App\Livewire\ShowUsers;
 Route::get('/', [HomeController::class, 'viewVi'])->middleware('nocache')->name('/');
 Route::get('admins/index',[adminController::class,'index'])->middleware('auth', 'nocache')->name('admins.index');
 Route::get('admins/registrer', [adminController::class, 'viewRegis'])->middleware('auth', 'nocache')->name('admins.register');
-
+Route::get('/solicitudcontraseña', [HomeController::class, 'viewUpdPass'])->middleware('nocache')->name('solicitud.UpdPass');
 
 Route::post('logins/login', [LoginController::class, 'login'])->name('logins.login');
+Route::post('/solicitudcontraseña', [HomeController::class, 'validateEmail'])->name('solicitud.validateEmail');
 Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
