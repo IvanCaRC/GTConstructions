@@ -1,5 +1,4 @@
 <div>
-<<<<<<< HEAD
     <div class="card mx-3" style="border-radius: 10px;">
         <div class="card-body p-3">
           <div class="table-responsive">
@@ -39,9 +38,4 @@
       </div>
       
           
-=======
-    <div class="d-flex justify-content-center">
-        <div>{{$users}}</div>
-    </div>
->>>>>>> 1c668089bccd3f3063efc9cc8f6c40f9069cb124
 </div>
