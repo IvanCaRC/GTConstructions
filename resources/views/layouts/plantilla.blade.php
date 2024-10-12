@@ -67,7 +67,6 @@
                 }
             </style>
 
-
             <!-- Nav Item - Icono de Roles -->
             <li class="nav-item @yield('activeRoles')">
                 <a class="nav-link" href="usuarios.html">
@@ -86,38 +85,19 @@
 
             <!-- Nav Item - Pagina colapsada de departamentos-->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
                     <i class="fas fa-fw fa-building"></i>
                     <span>Departamentos</span>
                 </a>
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item @yield('activeAlogin')" href="login.html">Login</a>
-                        <a class="collapse-item @yield('activeAregister')" href="register.html">Register</a>
-                        <a class="collapse-item @yield('activeAforgot')" href="forgot-password.html">Forgot Password</a>
+                    <div class="bg-primary-dark text-white py-2 collapse-inner rounded">
+                        <a class="collapse-item @yield('activeAlogin') text-white" href="login.html" onmouseover="this.style.backgroundColor='#003366';" onmouseout="this.style.backgroundColor='';">Compras</a>
+                        <a class="collapse-item @yield('activeAregister') text-white" href="register.html" onmouseover="this.style.backgroundColor='#003366';" onmouseout="this.style.backgroundColor='';">Ventas</a>
+                        <a class="collapse-item @yield('activeAforgot') text-white" href="forgot-password.html" onmouseover="this.style.backgroundColor='#003366';" onmouseout="this.style.backgroundColor='';">Finanzas</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header @yield('activeAdministracion')">Other Pages:</h6>
-                        <a class="collapse-item @yield('activeA404')" href="404.html">404 Page</a>
-                        <a class="collapse-item @yield('activeAblank')" href="blank.html">Blank Page</a>
                     </div>
                 </div>
-            </li>
-
-            <!-- Nav Item - Charts -->
-            <li class="nav-item @yield('activeCharts')">
-                <a class="nav-link" href="charts.html">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
-            </li>
-
-            <!-- Nav Item - Tables -->
-            <li class="nav-item @yield('activeTables')">
-                <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
-            </li>
+            </li>                                                                    
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
