@@ -4,7 +4,7 @@ use App\Http\Controllers\adminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use  App\Http\Controllers\HomeController;
-
+use App\Livewire\ShowUsers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
