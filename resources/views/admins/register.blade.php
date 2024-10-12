@@ -3,5 +3,5 @@
 @section('title', 'registro de usuario')
 @section('activeUsuarios', 'active')
 @section('contend')
-    @livewire('show-users');
+    @livewire('show-users')
 @endsection
