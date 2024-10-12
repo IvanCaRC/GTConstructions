@@ -6,6 +6,8 @@ use Livewire\Component;
 use App\Models\User;
 class ShowUsers extends Component
 {
+    public $search = 'prueba';
+
     public function render()
     {
         $users = User::all();
