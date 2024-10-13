@@ -69,7 +69,7 @@
 
             <!-- Nav Item - Icono de Roles -->
             <li class="nav-item @yield('activeRoles')">
-                <a class="nav-link" href="usuarios.html">
+                <a class="nav-link" href="{{route('admins.roles')}}">
                     <i class="fas fa-fw fa-user-tag"></i>
                     <span>Roles</span>
                 </a>
@@ -77,7 +77,7 @@
 
             <!-- Nav Item - Icono de cambio de Contraseña -->
             <li class="nav-item @yield('activeCambios')">
-                <a class="nav-link" href="usuarios.html">
+                <a class="nav-link" href="{{route('admins.cambioContra')}}">
                     <i class="fas fa-fw fa-key"></i>
                     <span>Cambios de contraseña</span>
                 </a>

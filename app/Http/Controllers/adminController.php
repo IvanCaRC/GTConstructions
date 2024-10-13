@@ -15,4 +15,14 @@ class adminController extends Controller
     {
         return view('admins.register');
     }
+
+    public function roles()
+    {
+        return view('admins.roles');
+    }
+
+    public function cambioContra()
+    {
+        return view('admins.cambiosContraseña');
+    }
 }

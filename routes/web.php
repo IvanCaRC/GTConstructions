@@ -19,6 +19,8 @@ use App\Livewire\ShowUsers;
 
 Route::get('/', [HomeController::class, 'viewVi'])->middleware('nocache')->name('/');
 Route::get('admins/index',[adminController::class,'index'])->middleware('auth', 'nocache')->name('admins.index');
+Route::get('admins/Roles', [adminController::class,'roles'])->middleware('auth', 'nocache')->name('admins.roles');
+Route::get('admins/cambiosContraseña', [adminController::class,'cambioContra'])->middleware('auth', 'nocache')->name('admins.cambioContra');
 Route::get('admins/registrer', [adminController::class, 'viewRegis'])->middleware('auth', 'nocache')->name('admins.register');
 Route::get('/solicitudcontraseña', [HomeController::class, 'viewUpdPass'])->middleware('nocache')->name('solicitud.UpdPass');
 
