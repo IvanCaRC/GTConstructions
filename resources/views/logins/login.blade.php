@@ -81,7 +81,7 @@
                                             <button data-mdb-button-init data-mdb-ripple-init
                                                 class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
                                         </div>
-                                        <a class="small text-muted" href="layouts/plantilla.blade.php">¿Olvidaste tu contraseña?</a>
+                                        <a class="small text-muted" href="{{route('solicitud.UpdPass')}}">¿Olvidaste tu contraseña?</a>
                                     </div>
                                 </div>
                             </div>
