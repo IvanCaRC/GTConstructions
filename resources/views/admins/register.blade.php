@@ -1,8 +1,7 @@
-@extends('layouts.plantilla')
-@livewireStyles
-@section('title', 'registro de usuario')
-@section('activeUsuarios', 'active')
-@section('contend')
-    @livewire('show-users')
-    @livewireScripts
-@endsection
+<x-platilla>
+    @section('title', 'Registro de Usuario')
+    @section('activeUsuarios', 'active')
+    <div>
+        @livewire('show-users')
+    </div>
+</x-platilla>

@@ -49,7 +49,7 @@
 
             <!-- Nav Item - Icono de Usuarios -->
             <li class="nav-item @yield('activeUsuarios')">
-                <a class="nav-link" href="{{ route('livewire.show-user') }}">
+                <a class="nav-link" href="{{ route('admins.register') }}">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Usuarios</span>
                 </a>
@@ -314,7 +314,8 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                @yield('contend')
+
+                {{ $slot }}
                 <!-- /.container-fluid -->
 
             </div>
