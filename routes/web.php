@@ -24,3 +24,7 @@ Route::get('admins/registrer', [adminController::class, 'viewRegis'])->middlewar
 
 Route::post('logins/login', [LoginController::class, 'login'])->name('logins.login');
 Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
+Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
+
+
+Route::get('livewire/show-user', ShowUsers::class)->middleware('auth', 'nocache');
