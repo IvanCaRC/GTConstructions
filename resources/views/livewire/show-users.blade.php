@@ -1,23 +1,78 @@
 <div>
-    <div class="bg-gray-800 bg-opacity-25 fixed top-0 left-0">
-
-        Hola
-
-    </div>
+    
     <h1 style="padding: 0 20px 20px 20px;">Tabla de usuarios</h1>
 
     <div class="card mx-3" style="border-radius: 10px;">
         <div class="card-body p-3">
-            <div class="mb-3">
-                @livewire('create-user')
-            </div>
+            
 
             <div class="input-group mb-3">
-                <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar a..."
-                    wire:model="searchTerm" wire:keydown='search'>
-                    
+                <button class="btn btn-primary" type="button" wire:click="showModal">
+                    <i class="fas fa-user-plus"></i> Agregar Usuario
+                </button>
+            
+                <!-- Modal -->
+                @if ($open)
+                <div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+                    <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md mx-auto z-60">
+                        <div class="modal-header">
+                            <h5 class="fw-normal mb-0">Registrar Usuario
+                                <img src="{{ asset('img/adduser.png') }}" alt="Agregar Usuario" class="img-fluid ml-2" style="width: 30px; height: auto;">
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <form method="POST">
+                                @csrf
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                        <label for="userInput" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="userInput" name="name" wire:model.defer="name" required>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3 mb-md-0">
+                                        <label for="apellidoInput1" class="form-label">Primer Apellido</label>
+                                        <input type="text" class="form-control" id="apellidoInput1" name="apellido1" wire:model.defer="first_last_name" required>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="apellidoInput2" class="form-label">Segundo Apellido</label>
+                                        <input type="text" class="form-control" id="apellidoInput2" name="apellido2" wire:model.defer="second_last_name" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailInput" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="emailInput" name="email" wire:model.defer="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phoneInput" class="form-label">Teléfono Celular</label>
+                                    <input type="text" class="form-control" id="phoneInput" name="phone" wire:model.defer="number" number minlength="10" maxlength="10" pattern="[0-9]{10}" title="Debe contener exactamente 10 dígitos" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0,10);">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="statusInput" class="form-label">Estado</label>
+                                    <select class="form-control" id="statusInput" name="status" wire:model.defer="status" required>
+                                        <option value="1">Activo</option>
+                                        <option value="0">Inactivo</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="passwordInput" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="passwordInput" name="password" wire:model.defer="password" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="passwordConfirmInput" class="form-label">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control" id="passwordConfirmInput" name="password_confirmation" required>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" wire:click="$set('open', false)">Cerrar</button>
+                            <button type="button" class="btn btn-primary" id="addUser" wire:click="save" wire:loading.attr="disabled" wire:target="save">Agregar Usuario</button>
+                        </div>
+                    </div>
+                </div>
+                @endif
+            
+                <!-- Barra de búsqueda -->
+                <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar a..." wire:model="searchTerm" wire:keydown='search'>
                 <div>
-
                     <button class="btn btn-primary" type="button" disabled>
                         <i class="fas fa-search fa-sm"></i>
                     </button>
@@ -26,7 +81,7 @@
                     </button>
                 </div>
             </div>
-
+            
             <div class="table-responsive">
                 @if ($users->count() > 0)
                     <table class="table">
