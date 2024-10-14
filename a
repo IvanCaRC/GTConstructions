@@ -1,0 +1,280 @@
+[33mcommit c4a939d80c18b809bc348957e85607a6469f22f4[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Sat Oct 12 19:58:17 2024 -0600
+
+    Roles y Contraseña vista
+
+[33mcommit 5078dea8182bcd9f6762464f74f8ff2cefda8148[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sat Oct 12 18:38:59 2024 -0600
+
+    Filtros y validacion de cambio de correo
+
+[33mcommit 8b930ef1a6c004cfd828df245783d8610dd32be3[m
+Merge: 41e16ce ba46eb8
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sat Oct 12 18:34:51 2024 -0600
+
+    Resolviendo conflictos en web.php
+
+[33mcommit 41e16ce7a8d1ca84fd6b1358593a14a3e32352db[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sat Oct 12 18:32:33 2024 -0600
+
+    Commit temporal antes del merge
+
+[33mcommit ba46eb8c83eb34daecd2efaf578265c80bea6c77[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Sat Oct 12 17:15:10 2024 -0600
+
+    Recuperacion de contraseña validada
+
+[33mcommit 209c0b7523059ad0387aa9f5809c62eedd197086[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Sat Oct 12 02:02:04 2024 -0600
+
+    Agregados Vista Usuarios
+
+[33mcommit 833da0f320429444111ec6dbcb96f6bb16050b09[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 23:43:21 2024 -0600
+
+    tabal usuarios completada
+
+[33mcommit bfdfd7fa070e94a9ed4a3816c1401e7a65e23cb3[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 22:40:59 2024 -0600
+
+    tabla2
+
+[33mcommit 37b189e48438eb7ca0cc8924f93ccc47d27fa6fa[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 22:40:51 2024 -0600
+
+    tabla
+
+[33mcommit 95869dad827f6d3d23b3b64b98089634d3291b61[m
+Merge: e7396a2 1c66808
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 22:39:09 2024 -0600
+
+    Merge branch 'buenobd' of https://github.com/IvanCaRC/GTConstructions into buenobd
+
+[33mcommit e7396a2067eb3e99f1863c14571a1a0107d1931a[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 22:38:14 2024 -0600
+
+    tabla
+
+[33mcommit 1c668089bccd3f3063efc9cc8f6c40f9069cb124[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Fri Oct 11 22:07:48 2024 -0600
+
+    Ajuste de livewire
+
+[33mcommit 06cc5133c3e3ac85c75b90b7dcdb43a37b5e77c1[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 21:55:15 2024 -0600
+
+    prueba de rama2
+
+[33mcommit 0139b094766107ed9c674add37a787961a83ab8c[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 21:52:09 2024 -0600
+
+    prueba de rama
+
+[33mcommit e1c848c9028d6a2e17b1f2c05904a74b59124f46[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 18:57:08 2024 -0600
+
+    creacion con kivestram
+
+[33mcommit 0ffda1f06a8742b9ab2044d9efe76e18eb269ccc[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 16:06:23 2024 -0600
+
+    Base de datos creada
+
+[33mcommit bd4c8b45de92f4a9d020208d01fa9a22b060bfc0[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Fri Oct 11 14:58:49 2024 -0600
+
+    Organizacion de carpetas de proyecto
+
+[33mcommit 9441fb5b18fb54969fa3525c2b497aa34223b277[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Thu Oct 10 16:22:43 2024 -0600
+
+    Migracion base de datos
+
+[33mcommit cf7559aae569a67ac52655f8a2fcef8f2fc31cfe[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Thu Oct 10 13:49:21 2024 -0600
+
+    Migracion base de datos
+
+[33mcommit 28f18beb888d1a9f19bc18e95f033d4722d6475c[m
+Merge: e6db318 db79167
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Thu Oct 10 13:46:58 2024 -0600
+
+    Merge branch 'tasks1' of https://github.com/IvanCaRC/GTConstructions into tasks1
+
+[33mcommit e6db318fc8ba1083d6e916c1ee6c572380ba6323[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Thu Oct 10 13:46:22 2024 -0600
+
+    AntesdefregarlaBD
+
+[33mcommit db7916742950dc176005bb105944902e40b2a3bb[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 5d93223 5dcfe81
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Thu Oct 10 12:46:12 2024 -0600
+
+    Resuelve conflictos del merge en LoginController y login.blade.php
+
+[33mcommit 5d93223be83aa467a351a19def472bdeae26861e[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Mon Oct 7 22:50:48 2024 -0600
+
+    Ajustes Dashboard
+
+[33mcommit 7fe002f5c98a09b816cd654741498ced368230f9[m
+Merge: 0f986ff 7354666
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Mon Oct 7 19:26:40 2024 -0600
+
+    Resuelve conflictos en routes/web.php
+
+[33mcommit 0f986ffc16a9f46f0ba29171276940738481f43f[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Mon Oct 7 19:25:00 2024 -0600
+
+    Guarda cambios en routes/web.php
+
+[33mcommit 7354666c1e9c69dd9e6f08399cf98405ddd6d03a[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Mon Oct 7 19:21:56 2024 -0600
+
+    Login validado
+
+[33mcommit a8071b06fea54ed40f6b92ccaa80361396ad06db[m
+Merge: 0df9fc9 9bfb213
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Mon Oct 7 18:48:55 2024 -0600
+
+    Conficto resuelto
+
+[33mcommit 0df9fc9acc20d74b2d4ce0142d9b39d1d59ea923[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Mon Oct 7 18:43:54 2024 -0600
+
+    Nuevo Login
+
+[33mcommit 9bfb2138717fb28ff59c91f66e96a27bcafd0116[m
+Merge: 69f1bc4 8bd05c6
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Mon Oct 7 00:00:48 2024 -0600
+
+    Merge remote-tracking branch 'refs/remotes/origin/tasks1' into tasks1
+
+[33mcommit 69f1bc4dc75ec41a90357b0b841a3fa709dc8bfd[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Mon Oct 7 00:00:15 2024 -0600
+
+    Guarda cambios en LoginController.php
+
+[33mcommit 8bd05c6c3eeef6a16413d18a50912d6dbec4e832[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Sun Oct 6 23:56:51 2024 -0600
+
+    Avance validacion
+
+[33mcommit 4ef4623da9e415c99ec9a7be163ff42ab40aad24[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 22:46:20 2024 -0600
+
+    Iniciar Pagina de cambio de contrase;a
+
+[33mcommit db646f2216716039fd0382352cdd040b0fe580b1[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 22:38:38 2024 -0600
+
+    Logo a;adido
+
+[33mcommit a1062d77611b3b0b7d4eaf9ce231c0455afb7104[m
+Merge: 81888eb fd7985d
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 22:35:15 2024 -0600
+
+    Merge branch 'tasks1' of https://github.com/IvanCaRC/GTConstructions into tasks1
+
+[33mcommit 81888eb5f817d7eb130d22ec4a7c5a67803d75ca[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 22:33:40 2024 -0600
+
+    Guarda cambios en login.blade.php
+
+[33mcommit fd7985d9245c6040908f1d2ea8292c97bbec4d48[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Sun Oct 6 22:31:25 2024 -0600
+
+    Modificacion Login
+
+[33mcommit 875b733c8800bb00e4d3acf40d872c8c70113f21[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 22:17:01 2024 -0600
+
+    new image
+
+[33mcommit d47be5a1eaedd0254e8127f0c1a1cd1f47a3cc3a[m
+Merge: c6ed1e1 16c048b
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Sun Oct 6 22:15:47 2024 -0600
+
+    Merge branch 'tasks1' of https://github.com/IvanCaRC/GTConstructions into tasks1
+
+[33mcommit c6ed1e1c83ac9c9d815114ffefefe0f38170ba57[m
+Author: DanielCG196 <danielcg76570@gmail.com>
+Date:   Sun Oct 6 22:14:56 2024 -0600
+
+    Merge
+
+[33mcommit 16c048b3930ecddaa6e58615d33746f9f8fd9906[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 22:10:44 2024 -0600
+
+    imagen login
+
+[33mcommit a929b5b7dbd0986ae9b2e5b20a46b1f6ee5eeae2[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 21:49:33 2024 -0600
+
+    nuevo login
+
+[33mcommit c031280e29bdffc00e02b6a77f1aa919cea18b2e[m
+Merge: f30493f 31d11bf
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 21:46:50 2024 -0600
+
+    Merge branch 'tasks1' of https://github.com/IvanCaRC/GTConstructions into tasks1
+
+[33mcommit f30493f9c4a035be466a9fe80d90a119e769676f[m
+Author: Ivan Axel <cupido.iacp@gmail.com>
+Date:   Sun Oct 6 21:44:58 2024 -0600
+
+    Nuevo login
+
+[33mcommit 5dcfe814508734c79aa6ec8be8283e5188eae788[m
+Merge: b804182 31d11bf
+Author: Daniel Carmona <131114174+DanielCG196@users.noreply.github.com>
+Date:   Sun Oct 6 21:30:51 2024 -0600
+
+    Merge pull request #2 from IvanCaRC/tasks1
+    
+    Tasks1
+
+[33mcommit 31d11bffbf73e7e3b56e341182f3048ad7dc50f8[m
+Merge: cc443aa 726665f
+Author: DanielCG196

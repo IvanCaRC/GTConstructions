@@ -1,5 +1,9 @@
 <div>
-    
+    <div class="bg-gray-800 bg-opacity-25 fixed top-0 left-0">
+
+        Hola
+
+    </div>
     <h1 style="padding: 0 20px 20px 20px;">Tabla de usuarios</h1>
 
     <div class="card mx-3" style="border-radius: 10px;">
@@ -138,8 +142,15 @@
                         <tbody>
                             @foreach ($users as $user)
                                 <tr>
-                                    <td class="align-middle"><img src="https://via.placeholder.com/50" alt="Imagen"
-                                            style="width: 50px; height: 50px; border-radius: 50%;"></td>
+                                    <td class="align-middle">
+                                        @if($user->image && $user->image !== 'users/')
+                                            <img src="{{ asset('storage/' . $user->image) }}" alt="Imagen" style="width: 50px; height: 50px; border-radius: 50%;">
+                                        @else
+                                            <img src="{{ asset('storage/StockImages/stockUser.png') }}" alt="Imagen por Defecto" style="width: 50px; height: 50px; border-radius: 50%;">
+                                        @endif
+                                    </td>                                   
+                                    
+                                    
                                     <td class="align-middle"> {{ $user->first_last_name }} {{ $user->second_last_name }}
                                         {{ $user->name }}
                                     </td>

@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use  App\Http\Controllers\HomeController;
 use App\Livewire\ShowUsers;
+use App\Http\Controllers\EmailController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +30,7 @@ Route::post('logins/login', [LoginController::class, 'login'])->name('logins.log
 Route::post('/solicitudcontraseña', [HomeController::class, 'validateEmail'])->name('solicitud.validateEmail');
 Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
 Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
+
 
 
 Route::get('livewire/show-user', ShowUsers::class)->middleware('auth', 'nocache');
