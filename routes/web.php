@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use  App\Http\Controllers\HomeController;
 use App\Livewire\ShowUsers;
-use App\Http\Controllers\EmailController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +31,7 @@ Route::post('/solicitudcontraseña', [HomeController::class, 'validateEmail'])->
 Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
 Route::get('logins/logout', [LoginController::class, 'logout'])->name('logins.logout');
 
+Route::get('send-password-reset-mail', [MailController::class, 'sendPasswordResetMail'])->name('sendPasswordResetMail');
 
 
 Route::get('livewire/show-user', ShowUsers::class)->middleware('auth', 'nocache');
